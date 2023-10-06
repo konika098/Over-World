@@ -3,7 +3,8 @@ const Bid = () => {
     return (
         <>
 
-            <div className="grid grid-cols-3 mt-10 mx-auto ">
+            <div className="grid grid-cols-3  mx-auto pt-20 "
+           >
                 <div className="card w-[450px] bg-base-100 shadow-2xl mx-auto  ">
                     <div className="flex">
                         <figure><img className="ml-6" src="/public/asstes/bid.jpg" alt="" /></figure>
@@ -23,7 +24,7 @@ const Bid = () => {
                 </div>
 
            
-                <div className="card w-[450px] bg-base-100 shadow-2xl mx-auto ">
+                <div className="card w-[450px] bg-base-100 shadow-2xl mx-auto " >
                     <div className="flex">
                         <figure><img className="ml-6" src="/public/asstes/bid2.jpg" alt="" /></figure>
                         <div className="card-body">
@@ -40,7 +41,7 @@ const Bid = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-[450px] bg-base-100 shadow-2xl mx-auto  ">
+                <div  className="card w-[450px] bg-base-100 shadow-2xl mx-auto  ">
                     <div className="flex">
                         <figure><img className="ml-6" src="/public/asstes/bid3.jpg" alt="" /></figure>
                         <div className="card-body">

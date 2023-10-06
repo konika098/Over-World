@@ -1,16 +1,20 @@
 import Banner from "../../Component/BannerSection/Banner";
 import Bid from "../../Component/BidSection/Bid";
-import Community from "../../Component/Community/Community";
+
+import RoadMap from "../../Component/RoadMap/RoadMap";
 
 
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Banner/>
-            <Bid/>
-            <Community/>
-        </div>
+           <div class="w-full h-screen bg-[url('https://i.ibb.co/wgMCXTZ/bg.jpg')] bg-cover bg-center ">
+           <Bid/>
+          
+            <RoadMap/>
+           </div>
+        </>
     );
 };
 
