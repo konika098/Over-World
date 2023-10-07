@@ -1,0 +1,26 @@
+[ {
+    "id": 1,
+    "title": "WOLF GAMING ART",
+    "name": "Alax Max",
+    "Image":"https://i.ibb.co/9T603Y8/bid.jpg",
+    "image": "https://i.ibb.co/F8LF70N/avatar.png",
+    "price": "1.001"
+  },
+{
+    "id": 2,
+    "title": "WOLF GAMING ART",
+    "name": "Jon Max",
+    "Image":"https://i.ibb.co/pnkx4Z5/bid2.jpg",
+    "image": "https://i.ibb.co/F8LF70N/avatar.png",
+    "price": "1.002"
+  },
+{
+    "id": 3,
+    "title": "WOLF GAMING ART",
+    "name": "Mark Max",
+    "Image":"https://i.ibb.co/TP4wbTc/bid3.jpg",
+    "image": "https://i.ibb.co/F8LF70N/avatar.png",
+    "price": "1.001"
+  }
+
+]

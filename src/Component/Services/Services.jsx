@@ -1,46 +1,42 @@
-import { AiOutlineTeam} from "react-icons/ai";
-import { AiOutlineSketch} from "react-icons/ai";
-import { AiOutlineSetting} from "react-icons/ai";
+// import { AiOutlineTeam} from "react-icons/ai";
+// import { AiOutlineSketch} from "react-icons/ai";
+// import { AiOutlineSetting} from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { RiServiceFill } from "react-icons/ri";
+
+import ServiceName from "./ServiceName";
 
 
 
 
 const Services = () => {
+    const [data,setData] =useState([])
+
+    const fetchUserData = () => {
+        fetch("Service.json")
+          .then(response => {
+            return response.json()
+          })
+          .then(data => {
+            setData(data)
+          })
+      }
+      useEffect(()=>{
+        fetchUserData()
+      })
+    
+    console.log(data)
+
     return (
         <>
-        <h1 className="text-4xl font-bold italic text-center text-white mt-20 flex gap-3">OUR POWERFUL SERVICES DONE ON TIME<RiServiceFill></RiServiceFill></h1>
-        <hr className="bg-purple-400 w-1/5  mt-4 mx-auto h-1"/>
-        <div className="grid grid-cols-3 gap-5 mt-10 items-center">
-            <div className="text-3xl font-semibold">
-                <AiOutlineTeam ></AiOutlineTeam>
-                <h1 >Expert Teams</h1>
-                <p></p>
-            </div>
-            <div className="text-3xl  font-semibold">
-                <AiOutlineSketch></AiOutlineSketch>
-                <h2 >Year Experience</h2>
-                <p></p>
-            </div>
-            <div className="text-3xl font-semibold">
-                <h1 >Best NFT Game</h1>
-                <p></p>
-            </div>
-            <div className="text-3xl font-semibold">
-                <AiOutlineSetting></AiOutlineSetting>
-                <h1 >Worldwide Client</h1>
-                <p></p>
-            </div>
-            <div className="text-3xl font-semibold">
-              
-                <h1 >Free Online Game</h1>
-            </div>
-            <div className="text-3xl font-semibold">
-              
-               
-                <h1 >Best Product</h1>
-            </div>
-        </div>
+        <h1 className=" text-lg lg:text-4xl font-bold italic text-center text-white mt-20 flex gap-3">OUR POWERFUL SERVICES DONE ON TIME<RiServiceFill></RiServiceFill></h1>
+        <hr className="bg-purple-300 w-1/5  mt-4 mx-auto h-1"/>
+      
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-10 mb-5">
+     {
+        data.map(showData => <ServiceName key={showData.id} showDatas={showData}></ServiceName>)
+      }
+     </div>
         
         </>
     );

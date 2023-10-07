@@ -1,0 +1,116 @@
+ [
+    {
+      "id": 1,
+      "Image":"https://i.ibb.co/BPRsvgK/live.png",
+      "displayName":"Live Streaming Integration",
+      "name": "Live Gaming Action",
+      "short_description": "Stream and share your gaming moments in real-time.",
+      "key_values": [
+        "Real-time streaming",
+        "Interactive audience engagement",
+        "High-quality video"
+      ],
+      "thumbnail_image": "link_to_thumbnail_image_1",
+      "long_description": [
+        "Unleash your gaming prowess to a global audience in real-time!",
+        "Engage with your fans through lively chat, donations, and shoutouts.",
+        "Capture and cherish epic gaming moments effortlessly with our integrated tools."
+      ],
+      "image": "https://i.ibb.co/sgJGzbh/gallery02.jpg"
+    },
+    {
+      "id": 2,
+      "Image":"https://i.ibb.co/FVQ4GWH/gift-card.png",
+      "displayName":"Market-killing Gaming Product",
+      "name": "Game Changer",
+      "short_description": "Revolutionize the gaming industry with cutting-edge products.",
+      "key_values": [
+        "Innovation and creativity",
+        "Market disruption",
+        "Product development expertise"
+      ],
+      "thumbnail_image": "link_to_thumbnail_image_2",
+      "long_description": [
+        "Be the visionary behind groundbreaking gaming products that redefine the market!",
+        "Embrace the future of gaming technology and lead the innovation charge.",
+        "Turn your wildest gaming dreams into tangible reality with our expert development team."
+      ],
+      "image": "https://i.ibb.co/tKSRr4m/about-img01.jpg"
+    },
+    {
+      "id": 3,
+      "displayName":"Top Gamers Ranking",
+      "Image":"https://i.ibb.co/68gRFGB/line-ascendant-graphic-of-zigzag-arrow-2.png",
+      "name": "Gamer Legends",
+      "short_description": "Recognize the best gamers on a global stage.",
+      "key_values": [
+        "Competitive spirit",
+        "Leaderboard recognition",
+        "Competitive matchmaking"
+      ],
+      "thumbnail_image": "link_to_thumbnail_image_3",
+      "long_description": [
+        "Prove your mettle against the world's gaming titans and claim your throne at the peak!",
+        "Ascend the ranks and bask in the glory of recognition on our leaderboards.",
+        "Experience the exhilaration of balanced, competitive gaming at its zenith."
+      ],
+      "image": "https://i.ibb.co/NxnqtQc/services-details.jpg"
+    },
+    {
+      "id": 4,
+      "displayName":"Worldwide Gamer Connection",
+      "Image":"https://i.ibb.co/kc8PRk7/worldwide.png",
+      "name": "Global Gaming Network",
+      "short_description": "Connect with gamers from every corner of the globe.",
+      "key_values": [
+        "International gaming community",
+        "Cross-cultural connections",
+        "Multiplayer matchmaking"
+      ],
+      "thumbnail_image": "link_to_thumbnail_image_4",
+      "long_description": [
+        "Forge enduring friendships and ignite fierce rivalries with gamers across the planet!",
+        "Dive into the global gaming mosaic with diverse multiplayer communities.",
+        "Dissolve borders and unite with fellow gamers spanning the Earth's expanse."
+      ],
+      "image": "https://i.ibb.co/10GFYjG/services-details02.jpg"
+    },
+    {
+      "id": 5,
+      "displayName":"Gamers Conference",
+      "Image":"https://i.ibb.co/hZzF7Gm/meeting.png",
+      "name": "GamerCon Xperience",
+      "short_description": "Immerse yourself in the ultimate gaming conference.",
+      "key_values": [
+        "Industry insights",
+        "Networking opportunities",
+        "Exclusive previews"
+      ],
+      "thumbnail_image": "link_to_thumbnail_image_5",
+      "long_description": [
+        "Embark on a thrilling journey through the latest gaming trends and innovations with industry luminaries!",
+        "Forge lasting connections with kindred gaming spirits and build invaluable networks.",
+        "Unveil exclusive glimpses of forthcoming game releases and groundbreaking developments."
+      ],
+      "image": "https://i.ibb.co/XtzvZLQ/gallery01.jpg"
+    },
+    {
+      "id": 6,
+      "displayName":"Gaming Competition/Show your Tigger",
+      "Image":"https://i.ibb.co/8dc9D5b/high-quality.png",
+      "name": "Trigger Showdown",
+      "short_description": "Compete in epic gaming battles and showcase your skills.",
+      "key_values": [
+        "Competitive tournaments",
+        "Skill development",
+        "Prizes and rewards"
+      ],
+      "thumbnail_image": "link_to_thumbnail_image_6",
+      "long_description": [
+        "Unleash your gaming fury in heart-pounding, high-stakes tournaments against the world's finest!",
+        "Refine your gaming prowess and ascend the ladder of skill mastery.",
+        "Seize victory, claim epic prizes, and etch your name among the elite of the gaming pantheon."
+      ],
+      "image": "https://i.ibb.co/Nm1YZtN/about-img02.jpg"
+    }
+  ]

@@ -1,0 +1,52 @@
+[ {
+    "id": 1,
+    "name": "Alax Max",
+     "profile_image":"https://i.ibb.co/wM03H9M/avatar.png",
+    "image": "https://i.ibb.co/6wWxnZL/nft-img04.jpg",
+    "price": "1.002",
+     "bid_time":"Last Bid"
+  },
+ {
+    "id": 2,
+    "name": "Jon Max",
+     "profile_image":"https://i.ibb.co/xJ7vFtC/avatar03.png",
+    "image": "https://i.ibb.co/g945X9R/nft-img05.jpg",
+    "price": "1.004",
+     "bid_time":"Last Bid"
+  },
+ {
+    "id": 3,
+    "name": "Barbeid Max ",
+     "profile_image":"https://i.ibb.co/ftWb7z5/avatar-2.png",
+    "image": "https://i.ibb.co/cyKBwv5/nft-img06.jpg ",
+    "price": "1.003",
+     "bid_time":"Last Bid"
+  },
+ {
+    "id": 4,
+    "name": "Rad Max",
+     "profile_image":"https://i.ibb.co/5jxfG7V/avatar03.png",
+    "image": "https://i.ibb.co/8cQyGx1/nft-img07.jpg",
+    "price": "1.002",
+     "bid_time":"Last Bid"
+  },
+ {
+    "id": 5,
+    "name": "Mark Max",
+     "profile_image":"https://i.ibb.co/ftWb7z5/avatar-2.png",
+    "image": "https://i.ibb.co/ZVjGxkS/nft-img08.jpg",
+    "price": "1.007",
+     "bid_time":"Last Bid"
+  },
+ {
+    "id": 6,
+    "name": "Helina Max",
+     "profile_image":"https://i.ibb.co/wM03H9M/avatar.png",
+    "image": "https://i.ibb.co/6wWxnZL/nft-img04.jpg",
+    "price": "1.009",
+     "bid_time":"Last Bid"
+  }
+
+
+
+]
