@@ -2,6 +2,8 @@ import Banner from "../../Component/BannerSection/Banner";
 import Bid from "../../Component/BidSection/Bid";
 
 import RoadMap from "../../Component/RoadMap/RoadMap";
+import Services from "../../Component/Services/Services";
+import Footer from "../Footer/Footer";
 
 
 
@@ -13,6 +15,8 @@ const Home = () => {
            <Bid/>
           
             <RoadMap/>
+            <Services/>
+            <Footer/>
            </div>
         </>
     );
