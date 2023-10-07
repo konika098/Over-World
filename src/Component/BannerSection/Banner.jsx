@@ -10,7 +10,7 @@ const Banner = () => {
             {/* <h1 className='text-white'>this is the banner section</h1> */}
             <div className='flex justify-center '>
                 <img className='relative' src="../../../public/asstes/banner1.png" alt="" />
-                <img className='absolute bottom-1' src="../../../public/asstes/banner2.png" alt="" />
+                <img data-aos="flip-up"   data-aos-duration="2000" className='absolute bottom-1' src="../../../public/asstes/banner2.png" alt="" />
             </div>
             <div>
                 

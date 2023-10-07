@@ -1,13 +1,15 @@
 import { AiOutlineTeam} from "react-icons/ai";
 import { AiOutlineSketch} from "react-icons/ai";
 import { AiOutlineSetting} from "react-icons/ai";
+import { RiServiceFill } from "react-icons/ri";
+
 
 
 
 const Services = () => {
     return (
         <>
-        <h1 className="text-4xl font-bold italic text-center mt-4">OUR POWERFUL SERVICES DONE ON TIME</h1>
+        <h1 className="text-4xl font-bold italic text-center text-white mt-20 flex gap-3">OUR POWERFUL SERVICES DONE ON TIME<RiServiceFill></RiServiceFill></h1>
         <hr className="bg-purple-400 w-1/5  mt-4 mx-auto h-1"/>
         <div className="grid grid-cols-3 gap-5 mt-10 items-center">
             <div className="text-3xl font-semibold">

@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 ul a.active{
-    color:black
+    text-decoration: underline;
+    
 }

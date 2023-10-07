@@ -3,7 +3,8 @@ const Bid = () => {
     return (
         <>
 
-            <div className="grid grid-cols-3  mx-auto pt-20 "
+            <div  data-aos="zoom-out-right" 
+     data-aos-duration="2500" className="grid grid-cols-3  mx-auto pt-20 gap-7 "
            >
                 <div className="card w-[450px] bg-base-100 shadow-2xl mx-auto  ">
                     <div className="flex">

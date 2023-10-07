@@ -4,10 +4,10 @@ import {  NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <div className='navbar bg-cover w-full   ' style={{ 
-            backgroundImage: `url("https://i.ibb.co/wgMCXTZ/bg.jpg")`,
-           
-          }} >
+            <div className="w-full  bg-[url('https://i.ibb.co/wgMCXTZ/bg.jpg')] bg-cover bg-center" 
+            // style={{ backgroundImage: `url("https://i.ibb.co/wgMCXTZ/bg.jpg")`,}}
+             >
+                <div className="navbar  backdrop-brightness-90">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,16 +35,7 @@ const Header = () => {
                         <NavLink>Tournament</NavLink>
                         <NavLink>Shop</NavLink>
                         <NavLink>Contact</NavLink>
-                            {/* <li >
-                            <details>
-                               
-                                <summary></summary>
-                                <ul className="p-4 text-white mt-4  w-44 bg-black text-center" >
-                                    <li><NavLink to="">Our Team</NavLink></li>
-                                    <li><NavLink to="">Player Details</NavLink></li>
-                                   </ul>
-                            </details>
-                        </li> */}
+                       
 
                    
                     </ul>
@@ -52,6 +43,7 @@ const Header = () => {
                 <div className="navbar-end">
                     <NavLink to="/contactUs" className="p-1 rounded  bg-purple-300 text-black border-none hover:bg-black text-base lg:text-xl lg:p-3 font-semibold hover:text-white">Sign in</NavLink>
 
+                </div>
                 </div>
             </div>
         </>
