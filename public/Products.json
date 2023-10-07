@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "NINTENDO SWITCH",
+         
+        "image": "https://i.ibb.co/F7wSzCD/product01.jpg",
+        "price": "29",
+         "ctg_name":"E-SPORTS"
+         
+      },
+    {
+        "id": 2,
+        "name": "HEADPHONE",
+         
+        "image": "https://i.ibb.co/swk2zsg/product02.jpg",
+        "price": "69",
+         "ctg_name":"ACCESSORIES"
+         
+      },
+    {
+        "id": 3,
+        "name": "REPLICA AXE",
+         
+        "image": "https://i.ibb.co/dJQ0ND9/product03.jpg",
+        "price": "39",
+         "ctg_name":"E-SPORTS"
+         
+      },
+    {
+        "id": 4,
+        "name": "PS5 CONTROLLER",
+         
+        "image": "https://i.ibb.co/WznNGmG/shop-details01.jpg",
+        "price": "49",
+         "ctg_name":"ACCESSORIES"
+         
+      }
+    ]
