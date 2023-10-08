@@ -15,10 +15,10 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-purple-400 text-center text-lg text-white rounded-box w-52">
                         <NavLink to="/home">Home</NavLink>
-                        <NavLink>Pages</NavLink>
+                        <NavLink to="/page">Pages</NavLink>
                         <NavLink>About Us</NavLink>
                         <NavLink>Tournament</NavLink>
-                        <NavLink>Shop</NavLink>
+                        <NavLink to="/shop">Shop</NavLink>
                         <NavLink>Contact</NavLink>
                         </ul>
                     </div>
@@ -29,11 +29,11 @@ const Header = () => {
                 <div className="navbar-center hidden lg:ml-12 lg:flex">
                     <ul className="flex gap-4 xl:gap-10 text-white font-semibold text-2xl ">
                         <NavLink  to="/home">Home</NavLink>
-                        <NavLink>Pages</NavLink>
+                        <NavLink to="/page">Pages</NavLink>
                         <NavLink>About Us</NavLink>
                     
                         <NavLink>Tournament</NavLink>
-                        <NavLink>Shop</NavLink>
+                        <NavLink to="/shop">Shop</NavLink>
                         <NavLink>Contact</NavLink>
                        
 
