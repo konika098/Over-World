@@ -22,7 +22,7 @@ const Header = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-purple-400 text-center text-lg text-white rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-purple-400 text-center text-lg text-white rounded-box w-52">
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/page">Pages</NavLink>
                         <NavLink to="/about">About Us</NavLink>
@@ -32,8 +32,13 @@ const Header = () => {
                         </ul>
                     </div>
 
-                    <img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="../../../public/asstes/logo1.png" alt="" />
+                    {
+                        user? <>
+                        <img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="/logo1.png" alt="" />
 
+                        </>:<img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="/logo1.png" alt="" />
+
+                    }
                 </div>
                 <div className="navbar-center hidden lg:ml-10 lg:flex">
                     <ul className="flex gap-4 xl:gap-10 text-white font-semibold text-2xl ">
@@ -65,7 +70,7 @@ const Header = () => {
                     } 
                     <div className="flex items-center gap-1">
                     {
-                        user && <span className="text-white hidden md:hidden md:text-lg">{user.displayName}</span>
+                        user && <span className="text-white  md:text-lg">{user.displayName}</span>
                     }
                     {
                         user ? <img className="rounded-full w-9 md:w-16" src={user.photoURL} alt="" />:""

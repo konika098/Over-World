@@ -5,8 +5,8 @@ import Swal from "sweetalert2";
 
 
 const Register = () => {
-    const { createUser, loginGoogle } = useContext(AuthContext)
-    console.log(createUser)
+    const { createUser, loginGoogle,updateUserDetails} = useContext(AuthContext)
+    
     const resgisterNav = useNavigate()
     const [error, setError] = useState()
     const [successfullyLogin, setSuccessfullyLogin] = useState()
@@ -39,11 +39,12 @@ const Register = () => {
         } else if (!/[!@#$%^&*]/.test(password))
             setError('you should a special character')
 
-        createUser(email, password, name)
+        createUser(email, password)
             .then(result => {
-                console.log(result.user)
+                console.log(result)
+                updateUserDetails(result.user,name,email)
                 e.target.reset()
-                resgisterNav("/")
+                // resgisterNav("/")
                 Swal.fire({
                     icon: "success",
                     title: "Sign In Successful",

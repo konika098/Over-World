@@ -25,7 +25,7 @@ const Services = () => {
         fetchUserData()
       })
     
-    console.log(data)
+   
 
     return (
         <>
