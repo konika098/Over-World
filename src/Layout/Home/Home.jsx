@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <Banner />
-            <div class="w-full min-h-screen bg-[url('https://i.ibb.co/wgMCXTZ/bg.jpg')] bg-cover bg-center ">
+            <div className="w-full min-h-screen bg-[url('https://i.ibb.co/wgMCXTZ/bg.jpg')] bg-cover bg-center ">
                 <div className="w-full min-h-screen h-full  flex flex-col  justify-center items-center backdrop-brightness-50">
                     <Bid />
 

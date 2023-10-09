@@ -10,13 +10,14 @@
         "Interactive audience engagement",
         "High-quality video"
       ],
-      "thumbnail_image": "link_to_thumbnail_image_1",
+      
       "long_description": [
         "Unleash your gaming prowess to a global audience in real-time!",
         "Engage with your fans through lively chat, donations, and shoutouts.",
         "Capture and cherish epic gaming moments effortlessly with our integrated tools."
       ],
-      "image": "https://i.ibb.co/sgJGzbh/gallery02.jpg"
+      "image": "https://i.ibb.co/sgJGzbh/gallery02.jpg",
+      "price":"$79"
     },
     {
       "id": 2,
@@ -29,13 +30,14 @@
         "Market disruption",
         "Product development expertise"
       ],
-      "thumbnail_image": "link_to_thumbnail_image_2",
+      
       "long_description": [
         "Be the visionary behind groundbreaking gaming products that redefine the market!",
         "Embrace the future of gaming technology and lead the innovation charge.",
         "Turn your wildest gaming dreams into tangible reality with our expert development team."
       ],
-      "image": "https://i.ibb.co/tKSRr4m/about-img01.jpg"
+      "image": "https://i.ibb.co/tKSRr4m/about-img01.jpg",
+      "price":"$99"
     },
     {
       "id": 3,
@@ -48,13 +50,14 @@
         "Leaderboard recognition",
         "Competitive matchmaking"
       ],
-      "thumbnail_image": "link_to_thumbnail_image_3",
+      
       "long_description": [
         "Prove your mettle against the world's gaming titans and claim your throne at the peak!",
         "Ascend the ranks and bask in the glory of recognition on our leaderboards.",
         "Experience the exhilaration of balanced, competitive gaming at its zenith."
       ],
-      "image": "https://i.ibb.co/NxnqtQc/services-details.jpg"
+      "image": "https://i.ibb.co/NxnqtQc/services-details.jpg",
+      "price":"$70"
     },
     {
       "id": 4,
@@ -67,13 +70,14 @@
         "Cross-cultural connections",
         "Multiplayer matchmaking"
       ],
-      "thumbnail_image": "link_to_thumbnail_image_4",
+      
       "long_description": [
         "Forge enduring friendships and ignite fierce rivalries with gamers across the planet!",
         "Dive into the global gaming mosaic with diverse multiplayer communities.",
         "Dissolve borders and unite with fellow gamers spanning the Earth's expanse."
       ],
-      "image": "https://i.ibb.co/10GFYjG/services-details02.jpg"
+      "image": "https://i.ibb.co/10GFYjG/services-details02.jpg",
+      "price":"$90"
     },
     {
       "id": 5,
@@ -86,13 +90,14 @@
         "Networking opportunities",
         "Exclusive previews"
       ],
-      "thumbnail_image": "link_to_thumbnail_image_5",
+      
       "long_description": [
         "Embark on a thrilling journey through the latest gaming trends and innovations with industry luminaries!",
         "Forge lasting connections with kindred gaming spirits and build invaluable networks.",
         "Unveil exclusive glimpses of forthcoming game releases and groundbreaking developments."
       ],
-      "image": "https://i.ibb.co/XtzvZLQ/gallery01.jpg"
+      "image": "https://i.ibb.co/XtzvZLQ/gallery01.jpg",
+      "price":"$39"
     },
     {
       "id": 6,
@@ -105,12 +110,13 @@
         "Skill development",
         "Prizes and rewards"
       ],
-      "thumbnail_image": "link_to_thumbnail_image_6",
+     
       "long_description": [
         "Unleash your gaming fury in heart-pounding, high-stakes tournaments against the world's finest!",
         "Refine your gaming prowess and ascend the ladder of skill mastery.",
         "Seize victory, claim epic prizes, and etch your name among the elite of the gaming pantheon."
       ],
-      "image": "https://i.ibb.co/Nm1YZtN/about-img02.jpg"
+      "image": "https://i.ibb.co/Nm1YZtN/about-img02.jpg",
+      "price":"$59"
     }
   ]
