@@ -8,8 +8,9 @@ const ShopCards = ({ data }) => {
     return (
         <>
           
-            <div className="card card-compact w-96  bg-base-100 text-white shadow-xl mx-auto  ">
-                <figure className="w-full "><img className="w-full" src={image} alt="Shoes" /></figure>
+            <div data-aos="fade-up"
+     data-aos-duration="3000" className="card card-compact w-96  bg-base-100 text-white shadow-xl mx-auto  ">
+                <figure  className="w-full "><img  className="w-full" src={image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p className="text-lg">{ctg_name}</p>

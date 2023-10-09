@@ -4,7 +4,7 @@ const BidsCard = ({Bids}) => {
     const {title,name,image,price,Image}=Bids
     return (
       <>
-        <div  className="card w-[450px] bg-base-100 shadow-2xl mx-auto text-white ">
+        <div  className="card w-[450px] bg-base-100 shadow-2xl mx-auto  text-white ">
                     <div className="flex">
                         <figure><img className="ml-6" src={Image} alt="" /></figure>
                         <div className="card-body">

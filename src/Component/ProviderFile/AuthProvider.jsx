@@ -11,22 +11,27 @@ const google = new GoogleAuthProvider()
 const AuthProvider = ({children}) => {
     const [user,setUser]=useState(null)
     const [loader,setLoader]=useState(false)
+    const [loading, setLoading] = useState(true);
 
 
     const createUser =(email,password)=>{
        setLoader(true);
+       setLoading(true);
         return createUserWithEmailAndPassword(auth,email,password)
     }
     const loginUser =(email,password)=>{
         setLoader(true);
+        setLoading(true);
         return signInWithEmailAndPassword(auth,email,password)
     }
     const logOut =()=>{
         setLoader(true);
+        setLoading(true);
         return signOut(auth)
     }
     const loginGoogle =()=>{
         setLoader(true);
+        setLoading(true);
         return signInWithPopup(auth,google)
     }
     
@@ -35,6 +40,7 @@ const AuthProvider = ({children}) => {
         const unsub =onAuthStateChanged(auth , (userInfo)=>{
             setUser(userInfo)
             console.log('data ache' ,userInfo)
+            setLoading(false);
         })
         return ()=>{
             unsub();
@@ -43,7 +49,7 @@ const AuthProvider = ({children}) => {
 
 
 
-    const AuthInfo ={user,createUser,loginUser,logOut,loginGoogle,loader}
+    const AuthInfo ={user,createUser,loginUser,logOut,loginGoogle,loader,loading}
     return (
        <>
         <AuthContext.Provider value={AuthInfo}>

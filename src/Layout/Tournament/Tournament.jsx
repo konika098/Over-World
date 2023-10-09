@@ -6,10 +6,10 @@ const Tournament = () => {
               <div className="flex gap-3 mt-20 items-center">
               <div>
                 
-              <h1 className="text-9xl italic font-semibold text-white">Coming Soon</h1>
+              <h1 className="text-3xl md:text-2xl xl:text-9xl italic font-semibold text-white">Coming Soon</h1>
               <h1 className="text-2xl text-white mt-2 ml-5"> Stay with Us <hr  /></h1>
               </div>
-              <img className="w-96 h-96" src="https://i.ibb.co/K6b5njN/mission.png" alt="" />
+              <img className="xl:w-96  xl:h-96 md:w-60 md:h-60 w-14 h-14" src="https://i.ibb.co/K6b5njN/mission.png" alt="" />
               </div>
               
             </div>

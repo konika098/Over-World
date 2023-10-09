@@ -17,7 +17,7 @@ const ServiceDetails = () => {
                     <div className="text-white container mx-auto">
                         <section class="text-white body-font">
                             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                                <div class="max-w-[800px]  mb-10 md:mb-0">
+                                <div class="lg:max-w-[800px]  mb-10 md:mb-0">
                                     <img class="object-cover object-center w-full rounded" alt="hero" src={ServiceInfo.image} />
                                 </div>
                                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -57,8 +57,8 @@ const ServiceDetails = () => {
                             </div>
                         </section>
                         <div>
-                            <h1 className="text-6xl mb-5 mt-6  underline">Description:</h1>
-                            <p className="text-white text-2xl italic mb-3">{ServiceInfo.long_description}</p>
+                            <h1 className="md:text-6xl text-3xl ml-2 mb-5 mt-6  underline">Description:</h1>
+                            <p className="text-white text-base ml-2 md:text-2xl italic mb-3">{ServiceInfo.long_description}</p>
 
                         </div>
                     </div>

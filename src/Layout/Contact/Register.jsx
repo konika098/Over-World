@@ -1,13 +1,19 @@
-import { useContext } from "react";
-
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Component/ProviderFile/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const Register = () => {
     const { createUser, loginGoogle } = useContext(AuthContext)
     console.log(createUser)
-    const resgisterNav =useNavigate()
+    const resgisterNav = useNavigate()
+    const [error, setError] = useState()
+    const [successfullyLogin, setSuccessfullyLogin] = useState()
+
+   
+
+ 
 
 
 
@@ -21,28 +27,63 @@ const Register = () => {
         const address = e.target.address.value
         console.log(email, password, number, address, name)
 
+        setError(" ")
+        setSuccessfullyLogin(" ")
+    
+        if (password.length < 6) {
+            setError(" Password should be at least 6 characters ")
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            setError('you should use one uppercase character.')
+            return;
+        } else if (!/[!@#$%^&*]/.test(password))
+            setError('you should a special character')
+
         createUser(email, password, name)
             .then(result => {
                 console.log(result.user)
                 e.target.reset()
-                resgisterNav("/home")
+                resgisterNav("/")
+                Swal.fire({
+                    icon: "success",
+                    title: "Sign In Successful",
+                    text: "You have successfully signed in!",
+                });
                 location.reload()
             })
             .catch(error => {
                 console.error(error)
+                Swal.fire({
+                    icon: "success",
+                    title: "Sign In Successful",
+                    text: "You have successfully signed in!",
+                });
             })
     }
     const handleGoogle = () => {
-          loginGoogle()
-          .then(result=>{console.log(result.user)
-            
-            resgisterNav("/home")
-            location.reload()
-        
-            
-        })
-        .catch(error=>{console.error(error)})
-         
+        loginGoogle()
+            .then(result => {
+                console.log(result.user)
+
+                resgisterNav("/")
+                Swal.fire({
+                    icon: "success",
+                    title: "Sign In Successful",
+                    text: "You have successfully signed in!",
+                });
+                location.reload()
+
+
+            })
+            .catch(error => {
+                console.error(error)
+                Swal.fire({
+                    icon: "success",
+                    title: "Sign In Successful",
+                    text: "You have successfully signed in!",
+                });
+            })
+
 
     }
 
@@ -103,6 +144,13 @@ const Register = () => {
 
                                 </div>
                             </form>
+
+                            {
+                                error && <p className="mx-8 text-white bg-purple-700 p-3">{error}</p>
+                            }
+                            {
+                                successfullyLogin && <p className="mx-8 text-green-600">{successfullyLogin}</p>
+                            }
 
 
 

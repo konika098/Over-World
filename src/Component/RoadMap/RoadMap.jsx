@@ -4,7 +4,7 @@ const RoadMap = () => {
     return (
        <>
       
-<div className="text-white text-center font-semibold mt-44   ">
+<div className="text-white text-center font-semibold mt-44 hidden md:block lg:block  ">
 <h1 className="text-3xl  xl:text-5xl italic ">A LOOK INTO ROADMAPS SEASONS</h1>
 <p className="lg:text-base xl:text-2xl mt-10 italic font-bold">with Season 1 Ending with our play and duis element sollicitudin is yaugue euismods Nulla ulla player-focused updates games from Mobile app and Enjoy</p>
 

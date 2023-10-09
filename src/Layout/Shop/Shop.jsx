@@ -11,14 +11,14 @@ const Shop = () => {
             
             <div class="w-full min-h-screen bg-[url('https://i.ibb.co/Lhp6cjX/pexels-photo-3165335.jpg')] bg-cover bg-center">
                 <div className="w-full min-h-screen h-full  flex flex-col  justify-center items-center backdrop-brightness-50">
-                    <h1 className="text-white italic font-semibold text-8xl mt-20">Buy Your Dreams 🥰</h1>
+                    <h1 data-aos="fade-down" className="text-white italic font-semibold  text-base md:text-5xl lg:text-8xl mt-20">Buy Your Dreams 🥰</h1>
 
 
                     <section class=" body-font overflow-hidden text-white">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="lg:w-4/5 mx-auto flex flex-wrap">
-                        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://i.ibb.co/WznNGmG/shop-details01.jpg"/>
-                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <img data-aos="fade-up-right" alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://i.ibb.co/WznNGmG/shop-details01.jpg"/>
+                            <div data-aos="fade-up-left" class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                                 <h2 class="text-sm title-font  tracking-widest text-white">BRAND NAME</h2>
                                 <h1 class="text-white text-3xl title-font font-medium mb-1"> PlayStation 5</h1>
                                 <div class="flex mb-4">
@@ -99,7 +99,7 @@ const Shop = () => {
 
                     <div className="mt-3 mb-10">
                         <h1 className="text-white text-3xl mb-7">RELATED PRODUCTS</h1>
-                        <div className="flex container mx-auto gap-4 ">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 container mx-auto gap-4 ">
 
                             {
                                 shopData.map(data => <ShopCards key={data.id} data={data}></ShopCards>)
