@@ -1,7 +1,16 @@
-import {  NavLink } from "react-router-dom";
+import { useContext } from "react";
+import {  Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../ProviderFile/AuthProvider";
 
 
-const Header = () => {
+const Header = () => { 
+    const {user,logOut} =useContext(AuthContext)
+
+    const handleLogOut =()=>{
+        logOut()
+        .then(()=>console.log("successfully log out"))
+        .catch(error=>console.error(error))
+    }
     return (
         <>
             <div className="w-full  bg-[url('https://i.ibb.co/wgMCXTZ/bg.jpg')] bg-cover bg-center" 
@@ -40,8 +49,34 @@ const Header = () => {
                    
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <NavLink to="/contactUs" className="p-1 rounded  bg-purple-300 text-black border-none hover:bg-black text-base lg:text-xl lg:p-3 font-semibold hover:text-white">Sign in</NavLink>
+                <div className="navbar-end gap-2">
+                    {
+                        user? "":<>
+                        <Link to="/register">
+                        <button  className="p-1 rounded  bg-purple-300 text-black border-none hover:bg-black text-base lg:text-xl lg:p-3 font-semibold hover:text-white">Register</button>
+                        </Link>
+                         
+                        
+                        
+                        <Link to="/login">
+                         <button  className="p-1 rounded  bg-purple-300 text-black border-none hover:bg-black text-base lg:text-xl lg:p-3 font-semibold hover:text-white">Login</button>
+                        </Link>
+                        </>
+                    } 
+                    <div className="flex items-center gap-4">
+                    {
+                        user && <span className="text-white text-lg">{user.displayName}</span>
+                    }
+                    {
+                        user ? <img className="rounded-full w-16" src={user.photoURL} alt="" />:""
+                    }
+                     {
+                        user ? 
+                        <button onClick={handleLogOut} className="p-1 rounded  bg-purple-300 text-black border-none hover:bg-black text-base lg:text-xl lg:p-3 font-semibold hover:text-white">Sign Out</button>
+                        :" "
+                     }
+                    </div>
+                   
 
                 </div>
                 </div>

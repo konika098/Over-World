@@ -1,7 +1,7 @@
 const Pages = () => {
     return (
         <>
-        <div class="w-full min-h-screen bg-[url('https://i.ibb.co/fDchNpp/pexels-photo-7562007.jpg')] bg-cover bg-center ">
+        <div className="w-full min-h-screen bg-[url('https://i.ibb.co/fDchNpp/pexels-photo-7562007.jpg')] bg-cover bg-center ">
             <div className="w-full min-h-screen h-full  flex flex-col  justify-center items-center backdrop-brightness-50">
               <div className="flex gap-3 mt-20 items-center">
               <div>

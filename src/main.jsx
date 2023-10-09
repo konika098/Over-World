@@ -17,6 +17,8 @@ import Login from './Layout/Contact/Login';
 import Tournament from './Layout/Tournament/Tournament';
 import AboutUs from './Layout/About/AboutUs';
 import AuthProvider from './Component/ProviderFile/AuthProvider';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import Register from './Layout/Contact/Register';
 
 
 const router = createBrowserRouter([
@@ -35,16 +37,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/serviceDetails/:id",
-        element: <ServiceDetails />,
+        element: <PrivateRoute><ServiceDetails /></PrivateRoute>,
         loader: () => fetch('Service.json')
       },
       {
         path: "/page",
-        element: <Pages />
+        element: <PrivateRoute><Pages/></PrivateRoute>
       },
       {
         path: "/shop",
-        element: <Shop />,
+        element: <PrivateRoute><Shop /></PrivateRoute>,
         loader: () => fetch('Products.json')
       },
       {
@@ -56,8 +58,12 @@ const router = createBrowserRouter([
         element: <Login />
       },
       {
+        path:"/register",
+        element:<Register/>
+      },
+      {
         path: "/tournament",
-        element: <Tournament />
+        element:<PrivateRoute> <Tournament /></PrivateRoute>
       },
       {
         path: "/about",

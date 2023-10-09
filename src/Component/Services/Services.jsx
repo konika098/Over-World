@@ -32,7 +32,7 @@ const Services = () => {
         <h1 className=" text-lg lg:text-4xl font-bold italic text-center text-white mt-20 flex gap-3">OUR POWERFUL SERVICES DONE ON TIME<RiServiceFill></RiServiceFill></h1>
         <hr className="bg-purple-300 w-1/5  mt-4 mx-auto h-1"/>
       
-     <div className="flex flex-wrap -m-4">
+     <div className="flex flex-wrap  -m-4">
      {
         data.map(showData => <ServiceName key={showData.id} showDatas={showData}></ServiceName>)
       }

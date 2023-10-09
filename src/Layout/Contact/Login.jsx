@@ -1,9 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Component/ProviderFile/AuthProvider";
 
 const Login = () => {
     const {loginUser}=useContext(AuthContext)
+    const logInNav =useNavigate()
+
     const handleLogin = e =>{
         e.preventDefault()
         const email =e.target.email.value
@@ -14,6 +16,8 @@ const Login = () => {
         loginUser(email,password)
         .then(result=>{
             console.log(result.user)
+            e.target.reset()
+            logInNav("/home")
             
         })
         .catch(error=>{
@@ -24,11 +28,7 @@ const Login = () => {
     return (
         <>
         <div  className="hero min-h-screen  bg-gradient-to-r from-pink-900 to-purple-800 backdrop-brightness-50">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">CONTACT US AND FIND YOUR OVERWORLD</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    </div>
+                    <h1 className="text-white font-bold text-4xl">Login Here</h1>
                     <div className="card flex-shrink-0 w-full  max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
@@ -42,18 +42,25 @@ const Login = () => {
                                     <span className="label-text text-white text-lg">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="Enter your password" className="input input-bordered text-white" required />
-                                <label className="label">
-                                    <a href="#" className=" text-white text-lg">Forgot password? </a>
-                                    <Link to="/contact" className="text-white text-lg ">Register</Link>
-                                </label>
+                              
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn hover:bg-purple-500 bg-purple-700 text-white">Login</button>
                             </div>
+                            <div className="form-control mt-2">
+                                    <button className="btn hover:bg-purple-500 bg-purple-700 text-white">Login with Google</button>
+                                
+                                </div>
                         </form>
+                        <div className="mb-4 ">
+                        <label className="label">
+                                    <a href="#" className=" text-white text-lg ml-3">Forgot password? </a>
+                                    <Link to="/contact" className="text-white text-lg  mr-3">Register</Link>
+                                </label>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
         
         </>
     );
