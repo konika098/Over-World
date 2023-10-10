@@ -3,6 +3,9 @@
 ## [ Private Repo Link](https://github.com/programming-hero-web-course-4/b8a9-event-management-konika098)
 
 Click here for the private repo: [https://github.com/programming-hero-web-course-4/b8a9-event-management-konika098](https://github.com/programming-hero-web-course-4/b8a9-event-management-konika098)
+## [ Live Link](https://assignment-9-c5a46.web.app/)
+
+Click here for the Live: [https://assignment-9-c5a46.web.app/](https://assignment-9-c5a46.web.app/)
 
 
 # Add at least 3 project feature
