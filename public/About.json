@@ -1,0 +1,26 @@
+[
+    {
+    "id":1,
+    "name":"THOMPSON SCOT",
+    "image":"https://i.ibb.co/Fkvyq8h/team03.png",
+    "tag":"Art Director"
+    },
+    {
+    "id":2,
+    "name":"KILLER MASTER",
+    "image":"https://i.ibb.co/DCVYHg2/team01.png",
+    "tag":"Blockchain Expert"
+    },
+    {
+    "id":3,
+    "name":"TANU MARK",
+    "image":"https://i.ibb.co/S0NW64c/team02.png",
+    "tag":"Developer"
+    },
+    {
+    "id":4,
+    "name":"SHKAH DANIAL",
+    "image":"https://i.ibb.co/1qrdYhs/team04.png",
+    "tag":"Crypto Advisor"
+    }
+]

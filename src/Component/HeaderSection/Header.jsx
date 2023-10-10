@@ -34,9 +34,9 @@ const Header = () => {
 
                     {
                         user? <>
-                        <img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="/logo1.png" alt="" />
+                        <img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="https://i.ibb.co/fdm563v/logo1.png" alt="" />
 
-                        </>:<img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="/logo1.png" alt="" />
+                        </>:<img className="w-[190px] h-[90px]  xl:w-[280px] xl:h-[120px]" src="https://i.ibb.co/fdm563v/logo1.png" alt="" />
 
                     }
                 </div>
@@ -70,7 +70,7 @@ const Header = () => {
                     } 
                     <div className="flex items-center gap-1">
                     {
-                        user && <span className="text-white  md:text-lg">{user.displayName}</span>
+                        user && <span className="text-white hidden  md:text-lg">{user.displayName}</span>
                     }
                     {
                         user ? <img className="rounded-full w-9 md:w-16" src={user.photoURL} alt="" />:""

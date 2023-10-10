@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer items-center p-4 bg-neutral text-neutral-content">
+            <footer className="footer items-center p-4 bg-neutral bg-gradient-to-r from-pink-900 to-purple-800 text-neutral-content">
                 <aside className="items-center grid-flow-col">
-                    <img className='w-[100px] h-[75px]' src="https://i.ibb.co/g7CMrD0/logo1.png" alt="" />
+                    <img className='hidden lg:block w-[100px] h-[75px]' src="https://i.ibb.co/g7CMrD0/logo1.png" alt="" />
                     <p>Copyright © 2023 - All right reserved</p>
                 </aside>
                 <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

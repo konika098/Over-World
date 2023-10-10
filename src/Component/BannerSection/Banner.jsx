@@ -9,8 +9,8 @@ const Banner = () => {
           }}  >
             {/* <h1 className='text-white'>this is the banner section</h1> */}
             <div className='flex justify-center '>
-                <img className='relative hidden lg:flex '  src="../../../public/asstes/banner1.png" alt="" />
-                <img data-aos="flip-up"   data-aos-duration="2000" className='absolute bottom-1' src="../../../public/asstes/banner2.png" alt="" />
+                <img className='relative hidden lg:flex '  src="https://i.ibb.co/DG1ZVyW/banner1.png" alt="" />
+                <img data-aos="flip-up"   data-aos-duration="2000" className='absolute bottom-1' src="https://i.ibb.co/Yk3dbfF/banner2.png" alt="" />
             </div>
             <div>
                 
